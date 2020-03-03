@@ -1,31 +1,14 @@
-# README
-# やらないといけない
- 1.共通部分を完成 ok
- 2.bootstrap ok
- 3.メッセージ ok
- 4.レコードの並び順 ok
- 5.validation ok
- 6.テスト ok
- 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 下記のURLが課題7の課題となります。
+課題7
+Bookers2に住所検索機能を追加しましょう
+jpostal.jpとgem jp_prefectureを使用して住所を検索しましょう
+実装する機能
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+モデル
+userモデルに郵便番号, 住所を格納するカラムを追加
+ビュー
+新規登録画面に郵便番号を入力するフォームを追加
+郵便番号を入力後、郵便番号に対応する住所を住所フォームに自動入力させる
+マイページに自分の住所の地図を表示 他人の詳細画面では住所を表示しないこと
+Google Map APIを使用すること
+APIトークンはgem dotenv-railsを使用し、環境変数として扱うこと
