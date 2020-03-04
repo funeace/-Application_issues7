@@ -12,3 +12,19 @@ userモデルに郵便番号, 住所を格納するカラムを追加 ok<br>
 マイページに自分の住所の地図を表示 他人の詳細画面では住所を表示しないこと<br>
 Google Map APIを使用すること ok<br>
 APIトークンはgem dotenv-railsを使用し、環境変数として扱うこと ok
+
+
+参考：
+  地図表示
+  https://www.webdesignleaves.com/pr/plugins/googlemap_01.html
+  https://qiita.com/tiara/items/4a1c98418917a0e74cbb
+
+  dotenv-rails関係
+  https://qiita.com/ryosuketter/items/ceb592dc6b23a20e51b5
+  https://qiita.com/noraworld/items/bfa80811c9e30b4474af
+
+  住所検索
+  https://ruby-rails.hatenadiary.com/entry/20150112/1421029284
+  https://qiita.com/keye/items/d732353364c9fa0de9bf
+  https://remonote.jp/rails-jp_prefecture-jppostal
+  https://teratail.com/questions/178269
