@@ -14,6 +14,26 @@
   </div>
 
   <div class="row">
+    <%= f.label :postal_id,"Postal Code" %><br>
+    <%= f.text_field :postal_id %>    
+  </div>
+
+  <div class="row">
+    <%= f.label :prefecture, "Prefecture" %><br>
+    <%= f.collection_select :prefecture, JpPrefecture::Prefecture.all, :name, :name %>
+  </div>
+
+  <div class="row">
+    <%= f.label :city, "City" %><br>
+    <%= f.text_field :city %>
+  </div>
+
+  <div class="row">
+    <%= f.label :street, "Street" %><br>
+    <%= f.text_field :street %>
+  </div>
+
+  <div class="row">
     <%= f.label :password %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
