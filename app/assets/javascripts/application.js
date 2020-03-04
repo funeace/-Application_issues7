@@ -17,3 +17,15 @@
 //= require bootstrap-sprockets
 //= require_tree .
 //= require jquery.jpostal
+
+$(function(){
+$(document).on('turbolinks:load', function(){
+  $("#user_postal_id").jpostal({
+    postcode : ["#user_postal_id"],
+    address : {
+      "#user_prefecture" : "%3",
+      "#user_city" : "%4%5"
+      }
+    });
+  });
+});
